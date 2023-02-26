@@ -54,7 +54,7 @@ const Home = () => {
         <Col lo='6' md='6'>
           <div className="hero__content">
           <p className="hero__subtitle">Treading product in   {year}</p>
-          <h2>well come to our shamble e</h2>
+          <h2>well come to our website</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
              Tempora non voluptates repellendus quaerat laborum molestiae
               provident vero blanditiis, quidem voluptatem harum 
