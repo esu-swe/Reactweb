@@ -1,0 +1,96 @@
+.hero_section{
+    background: var(--hero-bg);
+}
+.hero_section h2{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600; 
+    margin: 20px 0px;
+}
+.hero_section p{
+    color: rgb(10, 11, 10);
+    line-height: 28px;
+}
+.hero_section p:nth-child(1){
+    font-weight: 500;
+}
+.shope__btn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+.shope__btn a:hover{
+    color: #fff;
+}
+.hero__content{
+    padding-top: 45px;
+}
+.timer__count{
+    background: var(--primary-color);
+    height: 300px;
+}
+.timer__count img{
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+}
+.stor__btn{
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.stor__btn a:hover{
+    color: var(--primary-color);
+}
+@media only screen and (max-width:992px){
+    .hero__content h1{
+        font-style: 2rem;
+    }
+    .section_title{
+        font-style: 1.7rem;
+    }
+    .counter_img{
+        display: none;
+    }
+    .clock__top-content{
+        text-align: center;
+    }
+    .clock__top-content h4{
+        font-size: 0.9rem !important;
+    }
+    .clock__top-content h3{
+        font-size: 1rem !important;
+    }
+    .count_down{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:768px){
+    .hero__content h1{
+        font-style: 1.6rem;
+    }
+    .clock__top-content{
+        text-align: center;
+    }
+    .hero__content p {
+        font-style: 0.9rem;
+    }
+    .section_title{
+        font-style: 1.4rem;
+    }
+    .shope__btn a{
+        font-style: 0.9rem;
+    }
+}
+@media only screen and (max-width:576px){
+    .hero__content{
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+}

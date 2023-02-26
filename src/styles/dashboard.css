@@ -1,0 +1,28 @@
+
+.revanu_box .Order_box .user_box .Products_box{
+    padding: 20px;
+    border-radius: 5px;
+}
+.revanu_box{
+    background: var(--card-bg-01);
+}
+.Products_box{
+    background: var(--card-bg-03);
+}
+.Order_box{
+    background: var(--card-bg-04);
+
+}
+.user_box{
+    background: var(--card-bg-04);
+}
+.Order_box h5, .Products_box h5, .revanu_box h5, .user_box h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.Order_box span, .Products_box span, .revanu_box span, .user_box span{
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 2rem
+}

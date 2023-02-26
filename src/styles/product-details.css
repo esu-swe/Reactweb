@@ -1,0 +1,86 @@
+.product_detail{
+    margin-top: 70px;
+}
+.product_detail h2{
+    font-size: 1,6rem;
+    margin-bottom: 10px;
+}
+.product_rating span i{
+    color: chocolate;
+}
+.product_detail p span{
+    color: chocolate;
+    font-weight: 500;
+}
+.product_price{
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+.tab_wrapper    {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.active_tab{
+    font-weight: 600;
+}
+.tab_content p {
+    line-height: 30px;
+}
+.reviwes_wrapper ul li span{
+    color: chocolate;
+    font-weight: 500;
+}
+.reviwes_wrapper ul li p{
+    margin-top: 10px;
+}
+.reviwes_form{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.reviwes_form h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.form_group input,
+.form_group textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.form_group input:focus, 
+.form_group textarea:focus{
+    outline: none;
+}
+.form_group{
+    margin-bottom: 30px;
+}
+.form_group span{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: chocolate;
+    font-weight: 600; 
+    cursor: pointer;
+}
+.reiated_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+@media only screen  and(max-width: 768){
+    .product_detail{
+        font-size: 1.3rem;
+    }
+    .rating_group{
+        column-gap: 1rem !important;
+
+    }
+
+    
+}
