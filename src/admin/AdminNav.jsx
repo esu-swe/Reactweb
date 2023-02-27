@@ -19,6 +19,10 @@ const admin_nav = [
         display: 'Users',
         path: '/dashboard/users'
     },
+    {
+        display: 'Add-Products',
+        path: '/dashboard/add-products'
+    },
 ]
 
 const AdminNav = () => {

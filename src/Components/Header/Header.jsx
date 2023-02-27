@@ -76,7 +76,7 @@ const Header = () => {
 
   };
   const  toggleProfile = () =>
-   profileActionRef.current.classList.toggle('show_profileActions');
+   profileActionRef.current.classList.toggle('profile_actions');
 
 
   return <header className='header' ref={headerRef}>
@@ -84,7 +84,7 @@ const Header = () => {
       <Row>
         <div className='nav_wrapper'>
           <div className="logo">
-            <img src={logo} alt="logo" />
+          <i class="ri-shopping-cart-2-line"></i>
             <div>
               <h1>Ecom App</h1>
             </div>

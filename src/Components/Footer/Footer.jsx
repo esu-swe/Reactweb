@@ -11,7 +11,7 @@ const Footer = () => {
       <Row>
         <Col lg='4' className='mb-4' md='6'>
         <div className="logo">
-            <img src={logo} alt="logo" />
+        <i class="ri-shopping-bag-fill"></i>
             <div>
               <h1 className='text-white'>Ecomerce App</h1>
             </div>
@@ -26,10 +26,10 @@ const Footer = () => {
             <h4 className="quick__links-title">Top Categorys</h4>
             <ListGroup>
               <ListGroupItem className='ps-0 border-0 '>
-                <Link to="#">Mobile Phones</Link>
+                <Link to="/shope">Mobile Phones</Link>
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0'>
-                <Link to="#">Modern Sofa</Link> 
+                <Link to="/shope">Modern Sofa</Link> 
               </ListGroupItem>
               <ListGroupItem className='ps-0 border-0'>
                 <Link to="#">Arm Chir </Link>

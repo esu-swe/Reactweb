@@ -14,15 +14,18 @@
     display: flex;
      column-gap: 6px;
 }
-.logo img{
-    width: 1.5rem;
-    height: 1.5rem;
+.logo i{
+    position: relative;
+    color: rgb(26, 237, 36);
+    font-size: 1.9rem !important;
+    
 }
 .logo h1{
+    color: #2dd410;
+    padding-top: 22px;
     font-size: 1.4rem;
     font-weight: bold;
     font-style: italic;
-    color: var(--primary-color);
 }
 .menu{
     display: flex;
@@ -98,7 +101,7 @@ color: #121312;
     display: none;
     
 }
-.show_profileActions{
+.profile_actions{
     display: block;
 }
 .mobile_menu{

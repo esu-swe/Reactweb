@@ -4,11 +4,15 @@ import Helmet from "../Components/Helmet/Helmet"
 import { Container,Row, Col } from 'reactstrap';
 
 import "../styles/Shope.css";
-import products from '../assets/data/products';
+// import products from '../assets/data/products';
 import ProductsList from "../Components/UI/ProductsList"
+import useGetData from "../customer_hook/UseGetData";
+
 
 const Shope = () => {
-  const [productsData,setProductsData] = useState(products);
+  // const [productsData,setProductsData] = useState(products);
+  const {data: products,loading} = useGetData('products');
+
 
   const handelFilter = e => {
     const filterValue = e.target.value;
@@ -16,13 +20,13 @@ const Shope = () => {
       const filteredProducts = products.filter(
         (item) =>item.category === 'sofa'
       );
-      setProductsData(filteredProducts);
+      products(filteredProducts);
     }
     if(filterValue ==='mobile'){
       const filteredProducts = products.filter(
         (item) =>item.category === 'mobile'
      );
-     setProductsData(filteredProducts);
+     products(filteredProducts);
 
     }
 
@@ -30,20 +34,20 @@ const Shope = () => {
       const filteredProducts = products.filter(
         (item) =>item.category === 'chair'
       );
-      setProductsData(filteredProducts);
+      products(filteredProducts);
     }
     if(filterValue==='wireless'){
       const filteredProducts = products.filter(
         (item) =>item.category === 'wireless'
       );
-      setProductsData(filteredProducts);
+      products(filteredProducts);
     }
     
     if(filterValue==='watch'){
       const filteredProducts = products.filter(
         (item) =>item.category === 'watch'
       );
-      setProductsData(filteredProducts);
+      products(filteredProducts);
     }
     
 
@@ -53,7 +57,7 @@ const Shope = () => {
 
     const searchedProducts = products.filter(item => 
       item.productName.toLowerCase().includes(searchTern.toLowerCase()));
-      setProductsData(searchedProducts);
+      products(searchedProducts);
   }
 
   return <Helmet  title='shope'>
@@ -96,10 +100,10 @@ const Shope = () => {
     <Container>
       <Row>
         {
-          productsData.length === 0? 
+          products.length === 0? 
           (<h1 className='text-center fs-4'>No products are found</h1>):
           (
-          <ProductsList data={productsData} /> )
+          <ProductsList data={products} /> )
         }
       </Row>
     </Container>
